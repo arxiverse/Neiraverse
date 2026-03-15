@@ -1,0 +1,134 @@
+<div class="container">
+  <div class="lang-switch" id="langSwitch" aria-label="Language switcher">
+    <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
+    <button class="lang-btn" data-lang="id" onclick="setLanguage('id')">ID</button>
+  </div>
+
+  <nav class="section-navbar" id="sectionNavbar" aria-label="Section navigation">
+    <button class="nav-brand" onclick="backToMenu()">
+      <span class="nav-brand-dot"></span>
+      <span class="nav-brand-text">Back</span>
+    </button>
+
+    <div class="nav-desktop">
+      <button class="nav-link" data-section-link="introduction" onclick="navigateToSection('introduction')" data-i18n="menu.introduction">Introduction</button>
+      <button class="nav-link" data-section-link="services" onclick="navigateToSection('services')" data-i18n="menu.services">Services</button>
+      <button class="nav-link" data-section-link="gallery" onclick="navigateToSection('gallery')" data-i18n="menu.gallery">Gallery</button>
+      <button class="nav-link" data-section-link="testimonials" onclick="navigateToSection('testimonials')" data-i18n="menu.testimonials">Testimonials</button>
+      <button class="nav-link" data-section-link="about" onclick="navigateToSection('about')" data-i18n="menu.about">About</button>
+      <button class="nav-link" data-section-link="contact" onclick="navigateToSection('contact')" data-i18n="menu.contact">Contact</button>
+
+    </div>
+
+    <div class="nav-mobile">
+      <button class="nav-mobile-toggle" id="navMobileToggle" onclick="toggleNavbarMenu()" aria-expanded="false">
+        <span class="nav-mobile-icon"></span>
+      </button>
+
+      <div class="nav-mobile-panel" id="navMobilePanel">
+        <button class="nav-link nav-home-link" onclick="backToMenu()" data-i18n="nav.home">&larr; Back</button>
+        <button class="nav-link" data-section-link="introduction" onclick="navigateToSection('introduction')" data-i18n="menu.introduction">Introduction</button>
+        <button class="nav-link" data-section-link="services" onclick="navigateToSection('services')" data-i18n="menu.services">Services</button>
+        <button class="nav-link" data-section-link="gallery" onclick="navigateToSection('gallery')" data-i18n="menu.gallery">Gallery</button>
+        <button class="nav-link" data-section-link="testimonials" onclick="navigateToSection('testimonials')" data-i18n="menu.testimonials">Testimonials</button>
+        <button class="nav-link" data-section-link="about" onclick="navigateToSection('about')" data-i18n="menu.about">About</button>
+        <button class="nav-link" data-section-link="contact" onclick="navigateToSection('contact')" data-i18n="menu.contact">Contact</button>
+
+        <div class="lang-switch nav-lang-switch" aria-label="Language switcher">
+          <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" data-lang="id" onclick="setLanguage('id')">ID</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header" id="mainHeader">
+    <div class="logo">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#00f0ff" />
+            <stop offset="100%" style="stop-color:#ff00d4" />
+          </linearGradient>
+        </defs>
+        <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#logoGradient)"
+          stroke-width="2" />
+        <polygon points="50,20 80,37 80,63 50,80 20,63 20,37" fill="none" stroke="url(#logoGradient)"
+          stroke-width="1.5" opacity="0.6" />
+        <circle cx="50" cy="50" r="12" fill="url(#logoGradient)" opacity="0.3" />
+        <circle cx="50" cy="50" r="6" fill="url(#logoGradient)" />
+      </svg>
+    </div>
+    <h1 class="brand-name">Neiraverse</h1>
+    <p class="tagline" data-i18n="app.tagline">Digital Polymath</p>
+  </div>
+
+  <div class="menu-grid" id="menuGrid">
+    <div class="menu-item initial-load" data-section="introduction">
+      <div class="menu-badge">IN</div>
+      <div class="menu-title" data-i18n="menu.introduction">Introduction</div>
+    </div>
+    <div class="menu-item initial-load" data-section="services">
+      <div class="menu-badge">SV</div>
+      <div class="menu-title" data-i18n="menu.services">Services</div>
+    </div>
+    <div class="menu-item initial-load" data-section="gallery">
+      <div class="menu-badge">GL</div>
+      <div class="menu-title" data-i18n="menu.gallery">Gallery</div>
+    </div>
+    <div class="menu-item initial-load" data-section="testimonials">
+      <div class="menu-badge">TM</div>
+      <div class="menu-title" data-i18n="menu.testimonials">Testimonials</div>
+    </div>
+    <div class="menu-item initial-load" data-section="about">
+      <div class="menu-badge">AB</div>
+      <div class="menu-title" data-i18n="menu.about">About</div>
+    </div>
+    <div class="menu-item initial-load" data-section="contact">
+      <div class="menu-badge">CT</div>
+      <div class="menu-title" data-i18n="menu.contact">Contact</div>
+    </div>
+  </div>
+
+  <app-product />
+
+  <div id="contentArea">
+    <app-introduction />
+    <app-services />
+    <app-gallery />
+    <app-testimonial />
+    <app-about />
+    <app-contact />
+  </div>
+  <footer class="footer" id="mainFooter">
+    <div class="footer-socials" aria-label="Social media links">
+      <a class="social-link" href="https://discord.gg/GVRwDvr2nE" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M20.3 4.37A19.8 19.8 0 0 0 15.46 3a13.3 13.3 0 0 0-.62 1.27a18.3 18.3 0 0 0-5.68 0A13.3 13.3 0 0 0 8.54 3A19.7 19.7 0 0 0 3.7 4.37C.64 8.88-.18 13.27.23 17.6a19.9 19.9 0 0 0 5.94 3a14.6 14.6 0 0 0 1.27-2.07a12.9 12.9 0 0 1-2-.97c.17-.13.34-.27.5-.41c3.86 1.77 8.05 1.77 11.86 0c.17.14.33.28.5.41c-.64.38-1.31.71-2 .97c.36.72.79 1.41 1.27 2.07a19.8 19.8 0 0 0 5.94-3c.48-5.02-.82-9.37-3.77-13.23M8.02 14.95c-1.16 0-2.11-1.05-2.11-2.35s.93-2.35 2.1-2.35s2.13 1.06 2.11 2.35c0 1.3-.94 2.35-2.1 2.35m7.96 0c-1.16 0-2.1-1.05-2.1-2.35s.93-2.35 2.1-2.35s2.12 1.06 2.1 2.35c0 1.3-.94 2.35-2.1 2.35" />
+        </svg>
+      </a>
+      <a class="social-link" href="https://instagram.com/arxiverse" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4zm9.65 1.5a1.25 1.25 0 1 1-1.25 1.25a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 1 1-5 5a5 5 0 0 1 5-5m0 2a3 3 0 1 0 3 3a3 3 0 0 0-3-3" />
+        </svg>
+      </a>
+      <a class="social-link" href="https://www.reddit.com/user/neiraverse/" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M14.2 15.35c-.82.82-3.58.82-4.4 0a.5.5 0 1 0-.7.7c1.23 1.22 4.57 1.22 5.8 0a.5.5 0 0 0-.7-.7" />
+          <path fill="currentColor" d="M20.85 11.6c0-1.28-1.04-2.32-2.32-2.32c-.63 0-1.2.25-1.61.66c-1.58-1.03-3.75-1.7-6.16-1.77l1.04-3.27l2.8.66a1.74 1.74 0 1 0 .26-1.08l-3.37-.8a.54.54 0 0 0-.62.36l-1.24 3.92c-2.48.04-4.73.72-6.35 1.76a2.3 2.3 0 0 0-1.58-.64a2.32 2.32 0 0 0-.75 4.51a4.93 4.93 0 0 0-.06.75c0 3.47 4.02 6.29 8.96 6.29s8.96-2.82 8.96-6.29c0-.24-.02-.49-.06-.73a2.32 2.32 0 0 0 1.9-2.28m-14.79 1.89a1.35 1.35 0 1 1 1.35-1.35a1.35 1.35 0 0 1-1.35 1.35m11.87 0a1.35 1.35 0 1 1 1.35-1.35a1.35 1.35 0 0 1-1.35 1.35" />
+        </svg>
+      </a>
+      <a class="social-link" href="https://github.com/arxiverse" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71c.5.1.66-.22.66-.49c0-.24-.01-1.04-.01-1.88c-2.78.62-3.37-1.2-3.37-1.2c-.46-1.18-1.11-1.49-1.11-1.49c-.91-.64.07-.63.07-.63c1 .07 1.53 1.05 1.53 1.05c.89 1.57 2.34 1.11 2.91.85c.09-.66.35-1.11.63-1.37c-2.22-.26-4.56-1.14-4.56-5.08c0-1.12.39-2.03 1.03-2.75c-.1-.26-.45-1.3.1-2.71c0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35c1.91-1.33 2.75-1.05 2.75-1.05c.55 1.41.2 2.45.1 2.71c.64.72 1.03 1.63 1.03 2.75c0 3.95-2.34 4.82-4.57 5.08c.36.32.68.94.68 1.9c0 1.37-.01 2.47-.01 2.81c0 .27.17.59.67.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2" />
+        </svg>
+      </a>
+      <a class="social-link" href="https://tiktok.com/arxiverse" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M16.6 5.82A4.83 4.83 0 0 1 15.45 3h-3.08v12.37a2.58 2.58 0 1 1-1.77-2.45V9.78a5.74 5.74 0 1 0 4.85 5.67v-6.3a7.8 7.8 0 0 0 4.55 1.46V7.54a4.86 4.86 0 0 1-3.4-1.72" />
+        </svg>
+      </a>
+    </div>
+    <p data-i18n-html="footer.text">&copy; 2025 Neiraverse. Crafted with passion. Design by <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+  </footer>
+</div>

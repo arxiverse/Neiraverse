@@ -11,12 +11,18 @@
     </button>
 
     <div class="nav-desktop">
-      <button class="nav-link" data-section-link="introduction" onclick="navigateToSection('introduction')" data-i18n="menu.introduction">Introduction</button>
-      <button class="nav-link" data-section-link="services" onclick="navigateToSection('services')" data-i18n="menu.services">Services</button>
-      <button class="nav-link" data-section-link="gallery" onclick="navigateToSection('gallery')" data-i18n="menu.gallery">Gallery</button>
-      <button class="nav-link" data-section-link="testimonials" onclick="navigateToSection('testimonials')" data-i18n="menu.testimonials">Testimonials</button>
-      <button class="nav-link" data-section-link="about" onclick="navigateToSection('about')" data-i18n="menu.about">About</button>
-      <button class="nav-link" data-section-link="contact" onclick="navigateToSection('contact')" data-i18n="menu.contact">Contact</button>
+      <button class="nav-link" data-section-link="introduction" onclick="navigateToSection('introduction')"
+        data-i18n="menu.introduction">Introduction</button>
+      <button class="nav-link" data-section-link="services" onclick="navigateToSection('services')"
+        data-i18n="menu.services">Services</button>
+      <button class="nav-link" data-section-link="gallery" onclick="navigateToSection('gallery')"
+        data-i18n="menu.gallery">Gallery</button>
+      <button class="nav-link" data-section-link="testimonials" onclick="navigateToSection('testimonials')"
+        data-i18n="menu.testimonials">Testimonials</button>
+      <button class="nav-link" data-section-link="about" onclick="navigateToSection('about')"
+        data-i18n="menu.about">About</button>
+      <button class="nav-link" data-section-link="contact" onclick="navigateToSection('contact')"
+        data-i18n="menu.contact">Contact</button>
 
     </div>
 
@@ -27,12 +33,18 @@
 
       <div class="nav-mobile-panel" id="navMobilePanel">
         <button class="nav-link nav-home-link" onclick="backToMenu()" data-i18n="nav.home">&larr; Back</button>
-        <button class="nav-link" data-section-link="introduction" onclick="navigateToSection('introduction')" data-i18n="menu.introduction">Introduction</button>
-        <button class="nav-link" data-section-link="services" onclick="navigateToSection('services')" data-i18n="menu.services">Services</button>
-        <button class="nav-link" data-section-link="gallery" onclick="navigateToSection('gallery')" data-i18n="menu.gallery">Gallery</button>
-        <button class="nav-link" data-section-link="testimonials" onclick="navigateToSection('testimonials')" data-i18n="menu.testimonials">Testimonials</button>
-        <button class="nav-link" data-section-link="about" onclick="navigateToSection('about')" data-i18n="menu.about">About</button>
-        <button class="nav-link" data-section-link="contact" onclick="navigateToSection('contact')" data-i18n="menu.contact">Contact</button>
+        <button class="nav-link" data-section-link="introduction" onclick="navigateToSection('introduction')"
+          data-i18n="menu.introduction">Introduction</button>
+        <button class="nav-link" data-section-link="services" onclick="navigateToSection('services')"
+          data-i18n="menu.services">Services</button>
+        <button class="nav-link" data-section-link="gallery" onclick="navigateToSection('gallery')"
+          data-i18n="menu.gallery">Gallery</button>
+        <button class="nav-link" data-section-link="testimonials" onclick="navigateToSection('testimonials')"
+          data-i18n="menu.testimonials">Testimonials</button>
+        <button class="nav-link" data-section-link="about" onclick="navigateToSection('about')"
+          data-i18n="menu.about">About</button>
+        <button class="nav-link" data-section-link="contact" onclick="navigateToSection('contact')"
+          data-i18n="menu.contact">Contact</button>
 
         <div class="lang-switch nav-lang-switch" aria-label="Language switcher">
           <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
@@ -44,20 +56,7 @@
 
   <div class="header" id="mainHeader">
     <div class="logo">
-      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#00f0ff" />
-            <stop offset="100%" style="stop-color:#ff00d4" />
-          </linearGradient>
-        </defs>
-        <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#logoGradient)"
-          stroke-width="2" />
-        <polygon points="50,20 80,37 80,63 50,80 20,63 20,37" fill="none" stroke="url(#logoGradient)"
-          stroke-width="1.5" opacity="0.6" />
-        <circle cx="50" cy="50" r="12" fill="url(#logoGradient)" opacity="0.3" />
-        <circle cx="50" cy="50" r="6" fill="url(#logoGradient)" />
-      </svg>
+      <img src="nvrs.png" alt="" style="width: 130px; height: 130px;">
     </div>
     <h1 class="brand-name">Neiraverse</h1>
     <p class="tagline" data-i18n="app.tagline">Digital Polymath</p>
@@ -90,6 +89,138 @@
     </div>
   </div>
 
+  <section class="root-only-section root-feature-shell" id="rootFeatureShell">
+    <div class="root-shell-intro">
+      <span class="root-shell-label" data-i18n="root.features.label">Neiraverse Overview</span>
+      <h2 class="root-shell-title" data-i18n="root.features.title">
+        A digital universe for works that refuse to stay in one discipline
+      </h2>
+      <p class="root-shell-subtitle" data-i18n="root.features.subtitle">
+        Neira + Verse means one container for everything Neira can build, research, compose, engineer, or turn into a
+        functioning digital output.
+      </p>
+    </div>
+
+    <div class="intro-values">
+      <div class="value-card">
+        <div class="root-feature-icon">1</div>
+        <h3 data-i18n="root.features.cards.user.title">Identity That Holds Everything</h3>
+        <p data-i18n="root.features.cards.user.body">Neiraverse is not one narrow studio. It is the name that houses
+          every result created by Neira across many
+          digital fields.</p>
+      </div>
+      <div class="value-card">
+        <div class="root-feature-icon">2</div>
+        <h3 data-i18n="root.features.cards.deal.title">Works Become Real</h3>
+        <p data-i18n="root.features.cards.deal.body">Neiraverse exists to hold the outputs, not just the ideas. Once a
+          build
+          starts, it is expected to become an actual result, system, or piece of work.</p>
+      </div>
+      <div class="value-card">
+        <div class="root-feature-icon">3</div>
+        <h3 data-i18n="root.features.cards.pipeline.title">Call When Needed</h3>
+        <p data-i18n="root.features.cards.pipeline.body">If a problem needs to be designed, engineered, researched, or
+          translated
+          into a working digital form, Neiraverse can step in and help shape it.</p>
+      </div>
+      <div class="value-card">
+        <div class="root-feature-icon">4</div>
+        <h3 data-i18n="root.features.cards.reporting.title">Digital Polymath Mindset</h3>
+        <p data-i18n="root.features.cards.reporting.body">Digital Polymath means capability across multiple serious
+          domains, not just being good at one stack or one toolchain.</p>
+      </div>
+      <div class="value-card">
+        <div class="root-feature-icon">5</div>
+        <h3 data-i18n="root.features.cards.scheduling.title">All-Framework Fullstack</h3>
+        <p data-i18n="root.features.cards.scheduling.body">Web, backend, systems, and modern frameworks are part of the
+          range, including unconventional stacks like
+          Drogon C++.</p>
+      </div>
+      <div class="value-card">
+        <div class="root-feature-icon">6</div>
+        <h3 data-i18n="root.features.cards.email.title">Research and Experimentation</h3>
+        <p data-i18n="root.features.cards.email.body">Neiraverse also carries hypothesis papers, business models,
+          experimental thinking, and technical exploration
+          beyond client work.</p>
+      </div>
+    </div>
+
+    <div class="root-feature-grid">
+      <article class="root-feature-card root-feature-card-wide">
+        <div class="root-feature-wide-copy">
+          <div class="root-feature-icon large">07</div>
+          <h3 data-i18n="root.features.cards.activity.title">One Timeline, Many Outputs</h3>
+          <p data-i18n="root.features.cards.activity.body">
+            Every call, concept, prototype, code path, and finished work becomes part of the same evolving digital
+            universe.
+          </p>
+        </div>
+
+        <div class="root-feature-wide-visual">
+          <img
+            src="https://cdn.grapesjs.com/workspaces/cmf55fvd721dbd80a2yd22yfh/assets/32da24f3-f88d-41f6-8243-5442cebaa768__lp-flowdash-7.webp"
+            alt="Activity tracking preview" />
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="root-only-section root-workflow-shell" id="rootWorkflowShell">
+    <div class="root-shell-intro root-shell-intro-left">
+      <span class="root-shell-label" data-i18n="root.workflow.label">How It Operates</span>
+      <h2 class="root-shell-title" data-i18n="root.workflow.title">
+        How Neiraverse turns broad capability into real execution
+      </h2>
+    </div>
+
+    <div class="root-workflow-spotlight">
+      <div class="root-workflow-copy">
+        <h3 data-i18n="root.workflow.spotlight.title">A builder that can cross from software into infrastructure and
+          beyond</h3>
+        <p data-i18n="root.workflow.spotlight.body">
+          Neiraverse can move between AI, IT support, networking, MikroTik, servers, software engineering, music
+          making, gaming context, and system blueprinting without breaking the narrative.
+        </p>
+        <button class="root-workflow-link" onclick="navigateToSection('about')"
+          data-i18n="root.workflow.spotlight.link">
+          Read the Story
+        </button>
+      </div>
+
+      <div class="root-workflow-visual">
+        <img
+          src="https://cdn.grapesjs.com/workspaces/cmf55fvd721dbd80a2yd22yfh/assets/adad0930-2f8b-40e6-ad30-a8887636a3d8__lp-flowdash-1.webp"
+          alt="Secure data management" />
+      </div>
+    </div>
+
+    <div class="root-workflow-grid">
+      <article class="root-workflow-card">
+        <img
+          src="https://cdn.grapesjs.com/workspaces/cmf55fvd721dbd80a2yd22yfh/assets/2b21d077-d891-490b-8771-2baad99e4d13__lp-flowdash-2.webp"
+          alt="Mobile applications preview" />
+        <h3 data-i18n="root.workflow.cards.mobile.title">Execution in Any Context</h3>
+        <p data-i18n="root.workflow.cards.mobile.body">
+          Online or offline, product or system, experimental or practical, Neiraverse is built to adapt to what the
+          challenge actually needs.
+        </p>
+      </article>
+
+      <article class="root-workflow-card">
+        <div class="root-workflow-card-copy">
+          <h3 data-i18n="root.workflow.cards.files.title">Call Us If It Needs Building</h3>
+          <p data-i18n="root.workflow.cards.files.body">
+            If something needs to be designed, engineered, researched, or translated into a working result, this is
+            the place to start the conversation.
+          </p>
+        </div>
+        <img
+          src="https://cdn.grapesjs.com/workspaces/cmf55fvd721dbd80a2yd22yfh/assets/e04662d6-bf64-49be-bec6-3558869dcfad__lp-flowdash-3.webp"
+          alt="File sharing and collaboration preview" />
+      </article>
+    </div>
+  </section>
+
   <app-product />
 
   <div id="contentArea">
@@ -100,35 +231,90 @@
     <app-about />
     <app-contact />
   </div>
-  <footer class="footer" id="mainFooter">
-    <div class="footer-socials" aria-label="Social media links">
-      <a class="social-link" href="https://discord.gg/GVRwDvr2nE" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor" d="M20.3 4.37A19.8 19.8 0 0 0 15.46 3a13.3 13.3 0 0 0-.62 1.27a18.3 18.3 0 0 0-5.68 0A13.3 13.3 0 0 0 8.54 3A19.7 19.7 0 0 0 3.7 4.37C.64 8.88-.18 13.27.23 17.6a19.9 19.9 0 0 0 5.94 3a14.6 14.6 0 0 0 1.27-2.07a12.9 12.9 0 0 1-2-.97c.17-.13.34-.27.5-.41c3.86 1.77 8.05 1.77 11.86 0c.17.14.33.28.5.41c-.64.38-1.31.71-2 .97c.36.72.79 1.41 1.27 2.07a19.8 19.8 0 0 0 5.94-3c.48-5.02-.82-9.37-3.77-13.23M8.02 14.95c-1.16 0-2.11-1.05-2.11-2.35s.93-2.35 2.1-2.35s2.13 1.06 2.11 2.35c0 1.3-.94 2.35-2.1 2.35m7.96 0c-1.16 0-2.1-1.05-2.1-2.35s.93-2.35 2.1-2.35s2.12 1.06 2.1 2.35c0 1.3-.94 2.35-2.1 2.35" />
-        </svg>
-      </a>
-      <a class="social-link" href="https://instagram.com/arxiverse" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4zm9.65 1.5a1.25 1.25 0 1 1-1.25 1.25a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 1 1-5 5a5 5 0 0 1 5-5m0 2a3 3 0 1 0 3 3a3 3 0 0 0-3-3" />
-        </svg>
-      </a>
-      <a class="social-link" href="https://www.reddit.com/user/neiraverse/" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
-        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor" d="M14.2 15.35c-.82.82-3.58.82-4.4 0a.5.5 0 1 0-.7.7c1.23 1.22 4.57 1.22 5.8 0a.5.5 0 0 0-.7-.7" />
-          <path fill="currentColor" d="M20.85 11.6c0-1.28-1.04-2.32-2.32-2.32c-.63 0-1.2.25-1.61.66c-1.58-1.03-3.75-1.7-6.16-1.77l1.04-3.27l2.8.66a1.74 1.74 0 1 0 .26-1.08l-3.37-.8a.54.54 0 0 0-.62.36l-1.24 3.92c-2.48.04-4.73.72-6.35 1.76a2.3 2.3 0 0 0-1.58-.64a2.32 2.32 0 0 0-.75 4.51a4.93 4.93 0 0 0-.06.75c0 3.47 4.02 6.29 8.96 6.29s8.96-2.82 8.96-6.29c0-.24-.02-.49-.06-.73a2.32 2.32 0 0 0 1.9-2.28m-14.79 1.89a1.35 1.35 0 1 1 1.35-1.35a1.35 1.35 0 0 1-1.35 1.35m11.87 0a1.35 1.35 0 1 1 1.35-1.35a1.35 1.35 0 0 1-1.35 1.35" />
-        </svg>
-      </a>
-      <a class="social-link" href="https://github.com/arxiverse" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71c.5.1.66-.22.66-.49c0-.24-.01-1.04-.01-1.88c-2.78.62-3.37-1.2-3.37-1.2c-.46-1.18-1.11-1.49-1.11-1.49c-.91-.64.07-.63.07-.63c1 .07 1.53 1.05 1.53 1.05c.89 1.57 2.34 1.11 2.91.85c.09-.66.35-1.11.63-1.37c-2.22-.26-4.56-1.14-4.56-5.08c0-1.12.39-2.03 1.03-2.75c-.1-.26-.45-1.3.1-2.71c0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35c1.91-1.33 2.75-1.05 2.75-1.05c.55 1.41.2 2.45.1 2.71c.64.72 1.03 1.63 1.03 2.75c0 3.95-2.34 4.82-4.57 5.08c.36.32.68.94.68 1.9c0 1.37-.01 2.47-.01 2.81c0 .27.17.59.67.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2" />
-        </svg>
-      </a>
-      <a class="social-link" href="https://tiktok.com/arxiverse" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill="currentColor" d="M16.6 5.82A4.83 4.83 0 0 1 15.45 3h-3.08v12.37a2.58 2.58 0 1 1-1.77-2.45V9.78a5.74 5.74 0 1 0 4.85 5.67v-6.3a7.8 7.8 0 0 0 4.55 1.46V7.54a4.86 4.86 0 0 1-3.4-1.72" />
-        </svg>
-      </a>
+  <footer class="footer footer-gjs-shell" id="mainFooter">
+    <div class="footer-gjs-hero">
+      <div class="footer-gjs-copy">
+        <span class="footer-gjs-kicker" data-i18n="footer.community.kicker">Build with Neiraverse</span>
+        <h2 class="footer-gjs-title" data-i18n="footer.community.title">Need something designed, engineered, researched,
+          or systemized?</h2>
+        <p class="footer-gjs-text" data-i18n="footer.community.body">
+          Neiraverse exists for multidisciplinary digital work. If the problem is real and needs to become an actual
+          result, reach out and we can shape it together.
+        </p>
+        <button class="footer-gjs-cta" onclick="navigateToSection('contact')" data-i18n="footer.community.cta">
+          Talk to Neiraverse
+        </button>
+      </div>
+
+      <div class="footer-gjs-social-shell">
+        <p class="footer-gjs-social-label" data-i18n="footer.socialLabel">Stay connected across our channels</p>
+        <div class="footer-socials" aria-label="Social media links">
+          <a class="social-link" href="https://discord.gg/GVRwDvr2nE" target="_blank" rel="noopener noreferrer"
+            aria-label="Discord">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M20.3 4.37A19.8 19.8 0 0 0 15.46 3a13.3 13.3 0 0 0-.62 1.27a18.3 18.3 0 0 0-5.68 0A13.3 13.3 0 0 0 8.54 3A19.7 19.7 0 0 0 3.7 4.37C.64 8.88-.18 13.27.23 17.6a19.9 19.9 0 0 0 5.94 3a14.6 14.6 0 0 0 1.27-2.07a12.9 12.9 0 0 1-2-.97c.17-.13.34-.27.5-.41c3.86 1.77 8.05 1.77 11.86 0c.17.14.33.28.5.41c-.64.38-1.31.71-2 .97c.36.72.79 1.41 1.27 2.07a19.8 19.8 0 0 0 5.94-3c.48-5.02-.82-9.37-3.77-13.23M8.02 14.95c-1.16 0-2.11-1.05-2.11-2.35s.93-2.35 2.1-2.35s2.13 1.06 2.11 2.35c0 1.3-.94 2.35-2.1 2.35m7.96 0c-1.16 0-2.1-1.05-2.1-2.35s.93-2.35 2.1-2.35s2.12 1.06 2.1 2.35c0 1.3-.94 2.35-2.1 2.35" />
+            </svg>
+          </a>
+          <a class="social-link" href="https://instagram.com/arxiverse" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4zm9.65 1.5a1.25 1.25 0 1 1-1.25 1.25a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 1 1-5 5a5 5 0 0 1 5-5m0 2a3 3 0 1 0 3 3a3 3 0 0 0-3-3" />
+            </svg>
+          </a>
+          <a class="social-link" href="https://www.reddit.com/user/neiraverse/" target="_blank"
+            rel="noopener noreferrer" aria-label="Reddit">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M14.2 15.35c-.82.82-3.58.82-4.4 0a.5.5 0 1 0-.7.7c1.23 1.22 4.57 1.22 5.8 0a.5.5 0 0 0-.7-.7" />
+              <path fill="currentColor"
+                d="M20.85 11.6c0-1.28-1.04-2.32-2.32-2.32c-.63 0-1.2.25-1.61.66c-1.58-1.03-3.75-1.7-6.16-1.77l1.04-3.27l2.8.66a1.74 1.74 0 1 0 .26-1.08l-3.37-.8a.54.54 0 0 0-.62.36l-1.24 3.92c-2.48.04-4.73.72-6.35 1.76a2.3 2.3 0 0 0-1.58-.64a2.32 2.32 0 0 0-.75 4.51a4.93 4.93 0 0 0-.06.75c0 3.47 4.02 6.29 8.96 6.29s8.96-2.82 8.96-6.29c0-.24-.02-.49-.06-.73a2.32 2.32 0 0 0 1.9-2.28m-14.79 1.89a1.35 1.35 0 1 1 1.35-1.35a1.35 1.35 0 0 1-1.35 1.35m11.87 0a1.35 1.35 0 1 1 1.35-1.35a1.35 1.35 0 0 1-1.35 1.35" />
+            </svg>
+          </a>
+          <a class="social-link" href="https://github.com/arxiverse" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71c.5.1.66-.22.66-.49c0-.24-.01-1.04-.01-1.88c-2.78.62-3.37-1.2-3.37-1.2c-.46-1.18-1.11-1.49-1.11-1.49c-.91-.64.07-.63.07-.63c1 .07 1.53 1.05 1.53 1.05c.89 1.57 2.34 1.11 2.91.85c.09-.66.35-1.11.63-1.37c-2.22-.26-4.56-1.14-4.56-5.08c0-1.12.39-2.03 1.03-2.75c-.1-.26-.45-1.3.1-2.71c0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.84c.85 0 1.71.12 2.51.35c1.91-1.33 2.75-1.05 2.75-1.05c.55 1.41.2 2.45.1 2.71c.64.72 1.03 1.63 1.03 2.75c0 3.95-2.34 4.82-4.57 5.08c.36.32.68.94.68 1.9c0 1.37-.01 2.47-.01 2.81c0 .27.17.59.67.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2" />
+            </svg>
+          </a>
+          <a class="social-link" href="https://tiktok.com/arxiverse" target="_blank" rel="noopener noreferrer"
+            aria-label="TikTok">
+            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M16.6 5.82A4.83 4.83 0 0 1 15.45 3h-3.08v12.37a2.58 2.58 0 1 1-1.77-2.45V9.78a5.74 5.74 0 1 0 4.85 5.67v-6.3a7.8 7.8 0 0 0 4.55 1.46V7.54a4.86 4.86 0 0 1-3.4-1.72" />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
-    <p data-i18n-html="footer.text">&copy; 2025 Neiraverse. Crafted with passion. Design by <a href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+
+    <div class="footer-gjs-grid">
+      <article class="footer-gjs-card">
+        <h3 data-i18n="footer.columns.studio.title">Studio Notes</h3>
+        <p data-i18n="footer.columns.studio.body">
+          From identity systems to launch-ready platforms, every output is designed to feel sharp, coherent, and
+          useful.
+        </p>
+      </article>
+
+      <article class="footer-gjs-card">
+        <h3 data-i18n="footer.columns.presence.title">Digital Presence</h3>
+        <p data-i18n="footer.columns.presence.body">
+          Root experience for discovery, dedicated components for depth, and a modular system ready for the next layer.
+        </p>
+      </article>
+
+      <article class="footer-gjs-card">
+        <h3 data-i18n="footer.columns.network.title">Community Network</h3>
+        <p data-i18n="footer.columns.network.body">
+          Discord, Instagram, Reddit, GitHub, and TikTok stay wired into the same visual ecosystem instead of living as
+          detached links.
+        </p>
+      </article>
+    </div>
+
+    <p class="footer-gjs-credits" data-i18n-html="footer.credits">&copy; 2025 <span>Neiraverse</span></p>
   </footer>
 </div>
